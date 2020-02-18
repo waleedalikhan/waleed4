@@ -1,0 +1,2862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- BootStrap CSS -->
+    <link rel="stylesheet" href="./res/bootstrap.css">
+    <!-- BootStrap Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./swiper.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./res/sass/style.css">
+    <title>Food Website</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar bg-transparent px-4 py-3 align-items-center justify-content-between">
+        <a href="./index.html" class="navbar-brand d-none d-md-inline">
+            <img src="./res/img/lieferando.svg" alt="logo" class="img-fluid logo" width="165">
+        </a>
+        <a href="./index.html" class="navbar-brand d-md-none d-inline">
+            <img src="./res/img/small-logo.png" alt="logo" class="img-fluid" style="width: 40px !important;">
+        </a>
+
+        <!-- Address Modal Toggler -->
+            <button type="button" href="#myModal3" role="button" class="address-btn" data-toggle="modal">
+                Heerenberg im Gau, 71083
+            </button>
+        <!-- Address Modal Toggler ends -->
+
+        <!-- Language dropdown -->
+        <div class="nav-wrapper d-lg-block d-none ml-auto mr-4 mt-2">
+            <div class="sl-nav bg-white p-1 rounded-circle">
+                <ul>
+                    <li><i class="sl-flag flag-usa" aria-hidden="true"></i>
+                        <div class="triangle"></div>
+                        <ul>
+                            <li>
+                                <i class="sl-flag flag-usa">
+                                    <div id="germany"></div>
+                                </i>
+                                <span class="active">English</span>
+                            </li>
+                            <li>
+                                <i class="sl-flag flag-de">
+                                    <div id="germany"></div>
+                                </i>
+                                <span>Deutsch</span>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Language dropdown ends -->
+
+        <!-- Navbar Modal Toggler -->
+        <button type="button" href="#myModal" role="button" class="nav-btn" data-toggle="modal">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </button>
+        <!-- Navbar Modal Toggler ends -->
+
+        <!-- Navbar Modal -->
+        <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered mx-auto my-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="container">
+                            <div class="row mt-4">
+                                <div class="col-3">
+                                    <img src="./res/img/profile.png" alt="profile" class="w-75">
+                                </div>
+                                <div class="ml-n5 col-9">
+                                    <h3 class="modal-title text-white font-weight-bold" id="myModalLabel">My
+                                        account</h3>
+                                    <a href="#" class="text-white">View personal data</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <!-- Login Modal Toggler -->
+                            <div class="col-6">
+                                <button type="button" href="#loginModal" class="btn btn-block btn-outline login-btn"
+                                    role="button" data-toggle="modal">Login</button>
+                            </div>
+                            <!-- Login Modal Toggler ends -->
+
+                            <!-- Registration Modal Toggler -->
+                            <div class="col-6">
+                                <button type="button" href="#signModal" class="btn btn-block btn-primary create-btn"
+                                    role="button" data-toggle="modal">Create
+                                    account</button>
+                            </div>
+                            <!-- Registration Modal Toggler -->
+                        </div>
+                        <div class="row mt-5 pt-4 pl-4 pr-4">
+                            <div class="col-12 border-bottom bg-white py-3 px-4">
+                                <a type="button" href="#orderModal" class="link" data-toggle="modal" role="button">
+                                    <i class="fas fa-shopping-bag mr-3"></i> Orders
+                                </a>
+                            </div>
+                            <div class="col-12 bg-white py-3 px-4">
+                                <a type="button" href="#favoritesModal" class="link" data-toggle="modal" role="button">
+                                    <i class="fas fa-heart mr-3"></i> Favourites
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row p-4">
+                            <div class="col-12 bg-white py-3 px-4 border-bottom">
+                                <a href="#" class="link">
+                                    <i class="far fa-star mr-3"></i> Loyalty shop
+                                </a>
+                            </div>
+                            <div class="col-12 bg-white py-3 px-4 border-bottom">
+                                <a href="#" class="link">
+                                    <i class="fas fa-percentage mr-3"></i> StampCard
+                                </a>
+                            </div>
+                            <div class="col-12 bg-white py-3 px-4 border-bottom">
+                                <a href="#" class="link">
+                                    <i class="fas fa-info-circle mr-3"></i> Need help?
+                                </a>
+                            </div>
+                            <div class="col-12 bg-white py-3 px-4 border-bottom">
+                                <a href="#" class="link">
+                                    <i class="far fa-building mr-3"></i> Takeway Pay
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Navbar Modal ends -->
+
+        <!-- Login Modal -->
+        <div id="loginModal" class="modal modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#myModal">
+            <div class="modal-dialog modal-dialog-centered mx-auto my-modal">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="modal-title">Sign in</h4>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="#" class="btn btn-block login-btn p-3 mb-5">Login with FaceBook</a>
+                                <p class="or mb-4">or</p>
+                                <div class="form-group mb-5">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="form-group mb-5">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control mb-3" required>
+                                    <a href="#" class="pass-link text-right mt-3">Forgot password?</a>
+                                </div>
+                                <button type="submit" href="#" class="btn btn-block login-btn2 p-3 mb-3">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="pass-link text-center mb-2">Create Account</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Login Modal ends -->
+
+        <!-- Product Info Modal -->
+        <div id="productInfo" class="modal modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#myModal">
+            <div class="modal-dialog modal-dialog-centered mx-auto my-modal">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="modal-title">More product information</h4>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="product-h">LMIV - Allergen</h5>
+                                <ul class="info-list">
+                                    <li class="list-item">Contains cereals and products thereof containing gluten</li>
+                                    <li class="list-item">Contains eggs and products thereof</li>
+                                    <li class="list-item">Contains milk and products thereof (including lactose)</li>
+                                </ul>
+                                <p class="product-p">Please contact <a href="#">Customer service</a> in case you have allergies or intolerances.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product Info Modal ends -->
+
+        <!-- Signup Modal -->
+        <div id="signModal" class="modal modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#myModal">
+            <div class="modal-dialog modal-dialog-centered mx-auto my-modal">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="modal-title">Register</h4>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="#" class="btn btn-block login-btn p-3 mb-5">Login with FaceBook</a>
+                                <p class="or mb-4">or</p>
+                                <div class="form-group mb-5">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group mb-5">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="form-group mb-5">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control mb-3" required>
+                                </div>
+                                <div class="form-group mb-5">
+                                    <label for="password">Re-enter Password</label>
+                                    <input type="password" class="form-control mb-3" required>
+                                </div>
+                                <button type="submit" href="#" class="btn btn-block login-btn2 p-3">Send</button>
+                                <p class="caption mb-2">By clicking on send you accept the <a href="#">terms of use</a>
+                                    and the <a href="#">terms of use of the Loyalty Shop</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="pass-link text-center mb-3">I have an account</a>
+                </div>
+            </div>
+        </div>
+        <!-- Signup Modal ends -->
+
+        <!-- order Modal -->
+        <div id="orderModal" class="modal modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#myModal">
+            <div class="modal-dialog modal-dialog-centered mx-auto my-modal">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="modal-title text-center">Orders</h4>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body align-items-center">
+                        <div class="row mt-5">
+                            <div class="col-12 text-center">
+                                <i class="fas fa-shopping-bag fa-3x my-4"></i>
+                                <h4 class="my-4">No orders yet</h4>
+                                <p class="my-4" style="color: #7d7d7d;">You have no order history available</p>
+                                <button type="submit" href="#" class="btn d-block login-btn2 mx-auto">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- order Modal ends -->
+
+        <!-- Favourites Modal -->
+        <div id="favoritesModal" class="modal modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#myModal">
+            <div class="modal-dialog modal-dialog-centered mx-auto my-modal">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="modal-title text-center">Favourites</h4>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body align-items-center">
+                        <div class="row mt-5">
+                            <div class="col-12 text-center">
+                                <i class="fas fa-heart fa-3x my-4"></i>
+                                <h4 class="my-4">No favourite restaurants</h4>
+                                <p class="my-4" style="color: #7d7d7d;">You currently don't have any favourite
+                                    restaurants</p>
+                                <button type="submit" href="#" class="btn d-block login-btn2 mx-auto">Browse
+                                    Restaurants</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Favourites Modal ends -->
+
+        <!-- Address Modal -->
+        <div id="myModal3" class="modal modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="modal-title">Enter delivery address</h4>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="input-group input-group-lg mx-auto">
+                                    <i class="fas fa-map-marker-alt fa-1x pin p-3 align-self-center"></i>
+                                    <input type="text" class="form-control address-form"
+                                        placeholder="Enter address here">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- address Modal ends -->
+
+        <!-- Info Modal -->
+        <div id="infoModal" class="modal modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered mx-auto my-modal info-modal">
+                <!-- Modal content-->
+                <div class="modal-content info-content">
+                    <div class="modal-header border-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="modal-title">About restaurant</h4>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="nav nav-tabs mb-3">
+                            <li style="padding-bottom: 20px;"><a data-toggle="tab" href="#reviews"
+                                    style="font-size: 14px; font-weight: 400; color: rgb(10, 56, 71); text-decoration: none; padding-bottom: 20px;"
+                                    class="active-tab tab-link">Reviews
+                            <li style="padding-bottom: 20px;"><a data-toggle="tab" href="#info"
+                                    style="font-size: 14px; font-weight: 400; color: rgb(10, 56, 71); text-decoration: none; margin-left: 17px; padding-bottom: 20px;"
+                                    class="tab-link ml-3 text-center">Info</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <!-- Reviews tab -->
+                            <div id="reviews" class="tab-pane active">
+                                <div class="container-fluid p-4"
+                                    style="background-color: #0f3947; width: 100%; margin-top: -18px;">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 mb-3">
+                                            <h6 class="font-weight-bold text-white" style="font-size: 17px;">Overall score</h6>
+                                        </div>
+                                        <div class="col-md-2 col-3">
+                                            <h2 class="font-weight-bold text-white" style="font-size: 35px;">4.5</h2>
+                                        </div>
+                                        <div class="col-md-10 col-9 border-left">
+                                            <i class="fas fa-star star" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star-half-alt star" style="color: #f37f36;"></i>
+                                            <p class="text-white" style="font-size: 12px;">out of 259 reviews</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container p-4">
+                                    <div class="row mb-3 pt-4 pr-2" style="background-color: #f8f5f2;">
+                                        <div class="col-12">
+                                            <p style="font-size: 12px; font-weight: 600; color: #f37f36;">Anonymous</p>
+                                            <p style="font-size: 12px; margin-top: -2.4rem;">Thursday, 30 January 2020</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p style="font-size: 12px; font-weight: 600; color: #000;">Food</p>
+                                        </div>
+                                        <div class="col-6 text-right" style="margin-top: -1rem;">
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <p style="font-size: 14px; font-weight: 600; color: #000; margin-top: -2.4rem;">Delivery</p>
+                                        </div>
+                                        <div class="col-6 text-right pb-3" style="margin-top: -1.4rem;">
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 pt-4 pr-2" style="background-color: #f8f5f2;">
+                                        <div class="col-12">
+                                            <p style="font-size: 12px; font-weight: 600; color: #f37f36;">Anonymous</p>
+                                            <p style="font-size: 12px; margin-top: -2.4rem;">Thursday, 30 January 2020</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p style="font-size: 12px; font-weight: 600; color: #000;">Food</p>
+                                        </div>
+                                        <div class="col-6 text-right" style="margin-top: -1rem;">
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <p style="font-size: 14px; font-weight: 600; color: #000; margin-top: -2.4rem;">Delivery</p>
+                                        </div>
+                                        <div class="col-6 text-right pb-3" style="margin-top: -1.4rem;">
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 pt-4 pr-2" style="background-color: #f8f5f2;">
+                                        <div class="col-12">
+                                            <p style="font-size: 12px; font-weight: 600; color: #f37f36;">Anonymous</p>
+                                            <p style="font-size: 12px; margin-top: -2.4rem;">Thursday, 30 January 2020</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p style="font-size: 12px; font-weight: 600; color: #000;">Food</p>
+                                        </div>
+                                        <div class="col-6 text-right" style="margin-top: -1rem;">
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36;"></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <p style="font-size: 14px; font-weight: 600; color: #000; margin-top: -2.4rem;">Delivery</p>
+                                        </div>
+                                        <div class="col-6 text-right pb-3" style="margin-top: -1.4rem;">
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                            <i class="fas fa-star star1" style="color: #f37f36; margin-top: -2.4rem;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Reviews tab ends -->
+                            <!-- Info tab -->
+                            <div id="info" class="tab-pane">
+                                <div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.5710064952273!2d8.076955115302928!3d50.74644507387427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bc186e9ba0a223%3A0x6a79ca7f91176277!2sAgentur%20f%C3%BCr%20Arbeit%20Burbach!5e0!3m2!1sen!2s!4v1582018821947!5m2!1sen!2s" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row mt-4 align-items-center">
+                                        <div class="col-md-1 col-2">
+                                            <i class="fas fa-stopwatch fa-2x"></i>
+                                        </div>
+                                        <div class="col-md-11 col-10">
+                                            <h5>Delivery times</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row my-3 p-3" style="background-color: #f8f5f2;">
+                                        <div class="col-6">
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                Monday</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                Tuesday</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                Wednesday</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                Thursday</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                Friday</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                Saturday</p>
+                                            <p class=""
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                Sunday</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                17:00 - 22:30</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                17:00 - 22:30</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                17:00 - 22:30</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                17:00 - 22:30</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                17:00 - 00:00</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                12:00 - 00:00</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                12:00 - 22:30</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4 align-items-center">
+                                        <div class="col-md-1 col-2">
+                                            <i class="fas fa-bicycle fa-2x"></i>
+                                        </div>
+                                        <div class="col-md-11 col-10">
+                                            <h5>Delivery costs</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row my-3 p-3" style="background-color: #f8f5f2;">
+                                        <div class="col-6">
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                Minimum order amount</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                Deliver costs</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                10.00 €</p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color:rgb(102, 102, 102);">
+                                                Free</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4 align-items-center">
+                                        <div class="col-md-1 col-2">
+                                            <i class="far fa-window-maximize fa-2x"></i>
+                                        </div>
+                                        <div class="col-md-11 col-10">
+                                            <h5>Website</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row my-3 p-3" style="background-color: #f8f5f2;">
+                                        <div class="col-6">
+                                            <a class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; text-decoration: none;"
+                                                href="#">
+                                                riapizza-herrenberg.de
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4 align-items-center">
+                                        <div class="col-md-1 col-2">
+                                            <i class="fas fa-credit-card fa-2x"></i>
+                                        </div>
+                                        <div class="col-md-11 col-10">
+                                            <h5>Payment methods</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row text-center align-items-center my-3 mx-auto p-3"
+                                        style="background-color: #f8f5f2;">
+                                        <div class="col-2 bg-white p-2 border m-2">
+                                            <img src="./res/img/payment_0.png" alt="payment_0" class="img-fluid" />
+                                        </div>
+                                        <div class="col-2 bg-white p-2 border m-2">
+                                            <img src="./res/img/payment_1.png" alt="payment_1" class="img-fluid" />
+                                        </div>
+                                        <div class="col-2 bg-white p-2 border m-2">
+                                            <img src="./res/img/payment_2.png" alt="payment_2" class="img-fluid" />
+                                        </div>
+                                        <div class="col-2 bg-white p-2 border m-2">
+                                            <img src="./res/img/payment_3.png" alt="payment_3" class="img-fluid" />
+                                        </div>
+                                        <div class="col-2 bg-white p-2 border m-2">
+                                            <img src="./res/img/payment_4.png" alt="payment_4" class="img-fluid" />
+                                        </div>
+                                        <div class="col-2 bg-white p-2 border m-2">
+                                            <img src="./res/img/payment_5.png" alt="payment_5" class="img-fluid" />
+                                        </div>
+                                        <div class="col-2 bg-white p-2 border m-2">
+                                            <img src="./res/img/payment_6.png" alt="payment_6" class="img-fluid" />
+                                        </div>
+                                        <div class="col-2 bg-white p-2 border m-2">
+                                            <img src="./res/img/payment_7.png" alt="payment_7" class="img-fluid" />
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4 align-items-center">
+                                        <div class="col-md-1 col-2">
+                                            <i class="far fa-building fa-2x"></i>
+                                        </div>
+                                        <div class="col-md-11 col-10">
+                                            <h5>Colophon</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row my-3 p-3" style="background-color: #f8f5f2;">
+                                        <div class="col-12">
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color: rgb(102, 102, 102)">
+                                                Inayat Ullah Begum acts on behalf of Ria Pizza Herrenberg
+                                            </p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color: rgb(102, 102, 102)">
+                                                Stuttgarter Straße 36
+                                            </p>
+                                            <p class="mb-5"
+                                                style="font-size: 14px; font-weight: 400; color: rgb(102, 102, 102)">
+                                                71083 Herrenberg
+                                            </p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color: rgb(102, 102, 102)">
+                                                Email: info@lieferando.de
+                                            </p>
+                                            <p class="mb-5"
+                                                style="font-size: 14px; font-weight: 400; color: rgb(102, 102, 102)">
+                                                Fax: 4970329544330
+                                            </p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color: rgb(102, 102, 102)">
+                                                Platform of the EU-Commission for online dispute resolution:
+                                            </p>
+                                            <p class="mb-2"
+                                                style="font-size: 14px; font-weight: 400; color: rgb(102, 102, 102)">
+                                                https://ec.europa.eu/consumers/odr.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Info tab ends -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- InfoModal ends -->
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="z-index: 99999;">
+        <i class="fas fa-angle-up fa-2x"></i>
+    </button>
+    <!-- Back to top button ends -->
+
+    <!-- Sidebar -->
+    <div class="sidenav d-lg-block d-none" id="sidebar">
+        <div class="container-fluid">
+            <div class="row py-1" style="margin-top: -10px; border-bottom: 1px solid #eee;">
+                <div class="col-12 text-center">
+                    <h6 style="font-size: 14px; font-weight: 600; color: rgb(102, 102, 102);">Basket</h6>
+                </div>
+            </div>
+            <div class="row pt-3 pr-2 text-center" style="border-bottom: 1px solid #eee; width: 360px;">
+                <div class="col-12 mt-4">
+                    <i class="fas fa-shopping-bag fa-2x mb-4" style="color: #d7d7d7;"></i>
+                    <p style="font-size: .875rem; color: #7d7d7d;">Add some tasty food from the menu and place your
+                        order
+                    </p>
+                </div>
+            </div>
+            <div class="row pt-4 pb-0" style="border-bottom: 1px solid #eee;">
+                <div class="col-6 text-left mb-2" style="font-size: 15px; margin-left: -20px;">
+                    <p>Sub-total</p>
+                </div>
+                <div class="col-6 text-right" style="font-size: 15px;">
+                    <p style="margin-right: -30px;">0.00 €</p>
+                </div>
+                <div class="col-6" style="margin-top: -20px; margin-left: -20px; font-size: 15px;">
+                    <p class="font-weight-bold text-left">Total</p>
+                </div>
+                <div class="col-6" style="margin-top: -20px; font-size: 15px;">
+                    <p class="font-weight-bold text-right" style="margin-right: -30px;">0.00 €</p>
+                </div>
+            </div>
+            <div class="row" style="width: 340px;">
+                <div class="col-12 text-center">
+                    <p class="text-muted my-3" style=" font-size: 13px; color: #7d7d7d;">Sorry, you can't order yet.
+                        Ria Pizza has set a minimum order amount of
+                        10.00
+                        € (excl. delivery
+                        costs)</p>
+                    <a href="#" class="btn btn-block py-3 w-100 mx-auto text-center"
+                        style="background-color: #d7d7d7; color: #fff;">Order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar ends -->
+
+    <!-- Header -->
+    <header class="pizza-header">
+    </header>
+    <!-- Header ends -->
+
+    <!-- Restaurant Description -->
+    <section class="item my-0">
+        <div class="container hotel-container">
+            <div class="restaurant-logo">
+                <div class="row logo-container mx-auto">
+                    <div class="col-12 text-center bd-dark logo-inner">
+                        <img src="./res/img/pizza.png" alt="" class="img-fluid" width="100" />
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center mb-3">
+                <div class="col-8">
+                    <h3 class="heading">Ria Pizza</h3>
+                    <i class="fas fa-star star fa-sm" style="color: #f37f36;"></i>
+                    <i class="fas fa-star star fa-sm" style="color: #f37f36;"></i>
+                    <i class="fas fa-star star fa-sm" style="color: #f37f36;"></i>
+                    <i class="fas fa-star star fa-sm" style="color: #f37f36;"></i>
+                    <i class="fas fa-star-half-alt star fa-sm" style="color: #f37f36;"></i>
+                    <a href="#" class="ml-2 reviews" style="color: #f37f36;">(258 Reviews)</a>
+                </div>
+                <ul class="list-unstyled text-right ml-auto">
+                    <li class="d-inline-block">
+                        <button type="button" href="#infoModal" role="button" class="border"
+                            data-toggle="modal" id="info">
+                            <i class="fas fa-info fa-md info align-self-center"></i>
+                        </button>
+                    </li>
+                    <li class="d-inline-block">
+                        <button type="button" role="button" class="border-left border-top border-bottom
+                        border-right"
+                             id="heart">
+                            <i class="far fa-heart fa-md heart align-self-center"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-10 font-weight-bold">
+                    <p class="ria-para">This restaurant provides stamps. To receive them via email please make
+                        sure you are subscribed to
+                        "discounts, new restaurants and special offers" at the checkout </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Restaurant Description ends -->
+
+    <!-- Dish list -->
+    <!-- Swiper -->
+    <div class="js-menu-category-bar-sticky sticky-top mr" id="mainNav">
+        <div class="swiper-container container" style="max-width: 1050px;">
+            <button type="button" onclick="showSearchBar()" class="left fas fa-search fa-1x border-0 bg-transparent" id="search-btn"></button>
+            <div class="swiper-wrapper container" id="dish-list">
+                <a href="#cat1" data-category="1" class="swiper-slide nav-link js-scroll-trigger dishlink">Popular Dishes</a>
+                <a href="#cat2" data-category="2" class="swiper-slide nav-link js-scroll-trigger dishlink">Super&#8208;Sparmenüs</a>
+                <a href="#cat3" data-category="3" class="swiper-slide nav-link js-scroll-trigger dishlink">Salate</a>
+                <a href="#cat4" data-category="4" class="swiper-slide nav-link js-scroll-trigger dishlink">Pizza</a>
+                <a href="#cat5" data-category="5" class="swiper-slide nav-link js-scroll-trigger dishlink">Wunschpizza</a>
+                <a href="#cat6" data-category="6" class="swiper-slide nav-link js-scroll-trigger dishlink">Fleischgerichte</a>
+                <a href="#cat7" data-category="7" class="swiper-slide nav-link js-scroll-trigger dishlink">Burger</a>
+                <a href="#cat8" data-category="8" class="swiper-slide nav-link js-scroll-trigger dishlink">Indisch - Vorspeisen</a>
+                <a href="#cat9" data-category="9" class="swiper-slide nav-link js-scroll-trigger dishlink">Indisch - Hauptgerichte</a>
+                <a href="#cat10" data-category="10" class="swiper-slide nav-link js-scroll-trigger dishlink">Indisch - Biryani</a>
+            </div>
+            <div class="input-group mb-3" id="search-box">
+                <input type="text" class="form-control" placeholder="Search for meals, etc.." style="border-radius: 0 !important;">
+                <div class="input-group-append">
+                  <button type="button" onclick="hideSearchBar()" class="input-group-text bg-white" id="cross-btn" style="border-radius: 0 !important;"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <a href="#" class="swiper-next right fas fa-angle-right fa-2x mr-3" id="swiper-next"></a>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination">
+            </div>
+        </div>
+    </div>
+    <!-- Swiper ends -->
+
+    <div class="groups mr">
+        <section id="cat1" class="group-item" index="1">
+            <div class="container">
+                <div class="row mx-md-4 mx-1 mt-3 dish-head">
+                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                        <h5>Popular Dishes</h5>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0 px-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
+                                        </div>
+                                        <div class="col-6 text-right w-25">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseOne" class="p-0 m-0" aria-expanded="true" aria-controls="collapseOne" id="pluscross">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="pluscross1" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container-fluid align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-2 mx-auto">
+                                                    <label class="d-block" style="margin-top: -20px; font-size: 12px;">
+                                                        lhre Sauce:
+                                                    </label>
+                                                            <div class="custom-control custom-checkbox mb-2">
+                                                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                                                                <label class="custom-control-label" for="defaultUnchecked" style="font-size: 12px;">Default unchecked</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox mb-2">
+                                                                <input type="checkbox" class="custom-control-input" id="check1">
+                                                                <label class="custom-control-label" for="check1" style="font-size: 12px;">Default unchecked</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox mb-2">
+                                                                <input type="checkbox" class="custom-control-input" id="check2">
+                                                                <label class="custom-control-label" for="check2" style="font-size: 12px;">Default unchecked</label>
+                                                            </div>
+                                                            <div id="more-checks">
+                                                                <div class="custom-control custom-checkbox mb-2">
+                                                                    <input type="checkbox" class="custom-control-input" id="check3">
+                                                                    <label class="custom-control-label" for="check3" style="font-size: 12px;">Default unchecked</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox mb-2">
+                                                                    <input type="checkbox" class="custom-control-input" id="check4">
+                                                                    <label class="custom-control-label" for="check4" style="font-size: 12px;">Default unchecked</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox mb-2">
+                                                                    <input type="checkbox" class="custom-control-input" id="check5">
+                                                                    <label class="custom-control-label" for="check5" style="font-size: 12px;">Default unchecked</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox mb-2">
+                                                                    <input type="checkbox" class="custom-control-input" id="check6">
+                                                                    <label class="custom-control-label" for="check6" style="font-size: 12px;">Default unchecked</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox mb-2">
+                                                                    <input type="checkbox" class="custom-control-input" id="check7">
+                                                                    <label class="custom-control-label" for="check7" style="font-size: 12px;">Default unchecked</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox mb-2">
+                                                                    <input type="checkbox" class="custom-control-input" id="check8">
+                                                                    <label class="custom-control-label" for="check8" style="font-size: 12px;">Default unchecked</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox mb-2">
+                                                                    <input type="checkbox" class="custom-control-input" id="check8">
+                                                                    <label class="custom-control-label" for="check8" style="font-size: 12px;">Default unchecked</label>
+                                                                </div>
+                                                            </div>
+                                                            <button id="more-btn" onclick="show()" class="more-btn"><i class="fas fa-angle-down mr-3 text-dark"></i>Show 7 More </button>
+                                                            <button id="less-btn" onclick="less()" class="less-btn"><i class="fas fa-angle-up mr-3 text-dark"></i>Show 7 Less </button>
+                                                        <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                        </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel mb-3 panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" id="pluscross2" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cat2" class="group-item" index="2">
+            <div class="container">
+                <div class="row mx-md-4 mx-1 mt-3 dish-head">
+                    <div class="col-12 ml-5 py-3 mx-auto dish-col">
+                        <h5>Dish 1</h5>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0 mt-4">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" id="pluscross3" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" id="pluscross4" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel mb-3 panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseSix" aria-expanded="true" aria-controls="collapseSix" id="pluscross5" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cat3" class="group-item" index="3">
+            <div class="container">
+                <div class="row mx-md-4 mx-1 mt-3 dish-head">
+                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                        <h5>Dish 2</h5>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven" id="pluscross6" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseEight" aria-expanded="true" aria-controls="collapseEight" id="pluscross7" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel mb-3 panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseNine" aria-expanded="true" aria-controls="collapseNine" id="pluscross8" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseNine" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cat4" class="group-item" index="4">
+            <div class="container">
+                <div class="row mx-md-4 mx-1 mt-3 dish-head">
+                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                        <h5>Dish 3</h5>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTen" aria-expanded="true" aria-controls="collapseTen" id="pluscross9" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTen" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven" id="pluscross10" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseEleven" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel mb-3 panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve" id="pluscross11" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg p-3 border" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTwelve" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cat5" class="group-item" index="5">
+            <div class="container">
+                <div class="row mx-md-4 mx-1 mt-3 dish-head">
+                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                        <h5>Dish 4</h5>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse123" aria-expanded="true" aria-controls="collapse123" id="pluscross12" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapse123" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen" id="pluscross13" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseThirteen" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel mb-3 panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseFourteen" aria-expanded="true" aria-controls="collapseFourteen" id="pluscross14" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseFourteen" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cat6" class="group-item" index="6">
+            <div class="container">
+                <div class="row mx-md-4 mx-1 mt-3 dish-head">
+                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                        <h5>Dish 5</h5>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseFifteen" aria-expanded="true" aria-controls="collapseFifteen" id="pluscross15" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseFifteen" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseSixteen" aria-expanded="true" aria-controls="collapseSixteen" id="pluscross16" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseSixteen" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel mb-3 panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseSeventeen" aria-expanded="true" aria-controls="collapseSeventeen" id="pluscross17" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseSeventeen" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cat7" class="group-item" index="7">
+            <div class="container">
+                <div class="row mx-md-4 mx-1 mt-3 dish-head">
+                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                        <h5>
+                            Dish 6
+                        </h5>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseEighteen" aria-expanded="true" aria-controls="collapseEighteen" id="pluscross18" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseEighteen" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseNineteen" aria-expanded="true" aria-controls="collapseNineteen" id="pluscross19" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseNineteen" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel mb-3 panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwenty" aria-expanded="true" aria-controls="collapseTwenty" id="pluscross20" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTwenty" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cat8" class="group-item" index="8">
+            <div class="container">
+                <div class="row mx-md-4 mx-1 mt-3 dish-head">
+                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                        <h5>Dish 7</h5>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwentyOne" aria-expanded="true" aria-controls="collapseTwentyOne" id="pluscross21" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTwentyOne" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwentyTwo" aria-expanded="true" aria-controls="collapseTwentyTwo" id="pluscross20" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTwentyTwo" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel mb-3 panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwentyThree" aria-expanded="true" aria-controls="collapseTwentyThree" id="pluscross23" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTwentyThree" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cat9" class="group-item" index="9">
+            <div class="container">
+                <div class="row mx-md-4 mx-1 mt-3 dish-head">
+                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                        <h5>Dish 8</h5>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwentyFour" aria-expanded="true" aria-controls="collapseTwentyFour" id="pluscross24" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTwentyFour" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwentyFive" aria-expanded="true" aria-controls="collapseTwentyFive" id="pluscross25" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTwentyFive" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel mb-3 panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwentySix" aria-expanded="true" aria-controls="collapseTwentySix" id="pluscross26" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTwentySix" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cat10" class="group-item" index="10">
+            <div class="container">
+                <div class="row mx-md-4 mx-1 mt-3 dish-head">
+                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                        <h5>Dish 9</h5>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwentySeven" aria-expanded="true" aria-controls="collapseTwentySeven" id=" pluscross27" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTwentySeven" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwentyEight" aria-expanded="true" aria-controls="collapseTwentyEight" id="pluscross28" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTwentyEight" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-md-2 mx-0">
+                    <div class="col-12 ml-5 py-3 mx-auto">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel mb-3 panel-default">
+                                <div class="panel-heading border" role="tab" id="headingOne">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="panel-title">
+                                                Some dish
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwentyNine" aria-expanded="true" aria-controls="collapseTwentyNine" id="pluscross29" class="p-0 m-0">
+                                            <i class="fas fa-plus fa-lg border p-3" style="font-weight: 500; color: #1474f5"></i>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <h4>8.50 €</h4>
+                                </div>
+                                <div id="collapseTwentyNine" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body align-items-center py-4">
+                                        <div class="container align-items-center">
+                                            <div class="row">
+                                                <div class="col-8 mt-4 mx-auto">
+                                                    <label class="d-block">
+                                                        lhre Sauce:
+                                                    </label>
+                                                    <select class="custom-select mt-2" id="inputGroupSelect01">
+                                                        <option selected>mit Chillisauce</option>
+                                                        <option value="1">mit Ketchup</option>
+                                                        <option value="2">mit Mayonnaise</option>
+                                                        <option value="3">ohne Sauce</option>
+                                                    </select>
+                                                    <p class="m-0 mb-3 p-2">mit Chillisauce <a href="#">Product info</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 text-right">
+                                                    <form id='myform' method='POST' action='#' class="d-inline-block">
+                                                        <input type='button' value='-' class='qtyminus'
+                                                            field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus'
+                                                            field='quantity' />
+                                                    </form>
+                                                </div>
+                                                <div class="col-8 d-inline-block">
+                                                    <button class="btn btn-primary order-btn">Order Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Dish list ends -->
+
+
+
+    <!-- Footer -->
+    <footer class="footer pt-4 pl-4 pr-4" style="z-index: 667; position: absolute; left: 0; right: 0;">
+        <div class="container-fluid pt-4">
+            <div class="row justify-content-center align-items-center">
+                <ul style="list-style: none; text-align: center;">
+                    <li class="d-md-inline-block d-block mb-4" style="margin-right: 20px; font-size: 13px; font-weight: 400; color: #fff;">
+                        <a href="#" style="color: #fff;">Recommend a restaurant</a>
+                    </li>
+                    <li class="d-md-inline-block d-block mb-4" style="margin-right: 20px; font-size: 13px; font-weight: 400; color: #fff;">
+                        <a href="#" style="color: #fff;">Signup a restaurant</a>
+                    </li>
+                    <li class="d-md-inline-block d-block mb-4" style="margin-right: 20px; font-size: 13px; font-weight: 400; color: #fff;">
+                        <a href="#" style="color: #fff;">Jobs</a>
+                    </li>
+                    <li class="d-md-inline-block d-block mb-4" style="margin-right: 20px; font-size: 13px; font-weight: 400; color: #fff;">
+                        <a href="#" style="color: #fff;">Terms of use</a>
+                    </li>
+                    <li class="d-md-inline-block d-block mb-4" style="margin-right: 20px; font-size: 13px; font-weight: 400; color: #fff;">
+                        <a href="#" style="color: #fff;">Privacy statement</a>
+                    </li>
+                    <li class="d-md-inline-block d-block mb-4" style="margin-right: 20px; font-size: 13px; font-weight: 400; color: #fff;">
+                        <a href="#" style="color: #fff;">Colophon</a>
+                    </li>
+                    <li class="d-md-inline-block d-block mb-4" style="margin-right: 20px; font-size: 13px; font-weight: 400; color: #fff;">
+                        <a href="#" style="color: #fff;">Cookie statement</a>
+                    </li>
+                    <li class="d-md-inline-block d-block" style="margin-right: 20px; font-size: 13px; font-weight: 400; color: #fff;">
+                        <a href="#" style="color: #fff;">Bug Bounty</a>
+                    </li>
+                </ul>
+            </div>
+            <p style="font-size: 13px; font-weight: 400; color: #fff;" class="text-center mt-1">&copy; 2020 Lieferando.de</p>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
+
+
+    <!-- jQuery -->
+    <script src="./res/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="./res/js/jquery.waypoints.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./res/bootstrap.bundle.js"></script>
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/2def6b71ee.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./res/js/index.js"></script>
+    <script src="./res/js/myscroller.js"></script>
+    <script src="./res/js/myswiper.js"></script>
+</body>
+
+</html>

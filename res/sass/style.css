@@ -2125,7 +2125,7 @@ p {
   margin: 0;
 }
 
-input[value="0"] {
+.qtvalue {
   color: #27f;
   font-size: 20px;
   width: 50px;
@@ -2133,29 +2133,40 @@ input[value="0"] {
   text-align: center;
   position: relative;
   border-radius: 0 !important;
+  background: #fff !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
 }
 
-input[value="-"] {
+.qtminus {
   color: #666;
   font-size: 22px;
   font-weight: 600;
   width: 50px;
+  background: #fff !important;
   height: 45px;
   margin-right: -3.5px;
   border-right: 0;
   border-radius: 0 !important;
-  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
 }
 
-input[value="+"] {
+.qtplus {
   color: #666;
   font-size: 22px;
   font-weight: 600;
+  background: #fff !important;
   width: 50px;
   height: 45px;
   margin-left: -3.5px;
   border-left: 0;
   border-radius: 0 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
 }
 
 .order-btn {
@@ -2166,12 +2177,12 @@ input[value="+"] {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 451px) {
-  input[value="0"] {
+  .qtvalue {
     width: 40px !important;
     height: 35px !important;
     text-align: center !important;
   }
-  input[value="+"] {
+  .qtplus {
     width: 40px !important;
     height: 35px !important;
     margin-left: -4px !important;
@@ -2180,7 +2191,7 @@ input[value="+"] {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  input[value="-"] {
+  .qtminus {
     width: 40px;
     height: 35px;
     margin-right: -4px;
@@ -2189,20 +2200,19 @@ input[value="+"] {
 }
 
 @media only screen and (max-width: 511px) {
-  input[value="0"] {
+  .qtvalue {
     width: 30px;
     height: 45px;
     text-align: center;
     position: relative;
-    top: 1px;
   }
-  input[value="+"] {
+  .qtplus {
     width: 30px;
     height: 45px;
     margin-left: -4px;
     border-left: 0;
   }
-  input[value="-"] {
+  .qtminus {
     width: 30px;
     height: 45px;
     margin-right: -4px;
@@ -2214,14 +2224,14 @@ input[value="+"] {
   #myform {
     width: 100px !important;
   }
-  input[value="0"] {
+  .qtvalue {
     color: #27f;
     font-size: 14px !important;
     width: 35px !important;
     height: 35px !important;
     text-align: center;
   }
-  input[value="-"] {
+  .qtminus {
     color: #666;
     font-size: 14px !important;
     width: 30px !important;
@@ -2229,7 +2239,7 @@ input[value="+"] {
     margin-right: -4px;
     border-right: 0;
   }
-  input[value="+"] {
+  .qtplus {
     color: #666;
     font-size: 14px !important;
     width: 30px !important;
@@ -2347,12 +2357,17 @@ input::placeholder {
 }
 
 #product-info {
-  font-size: 13px !important;
+  font-size: 11px !important;
   color: #17f !important;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: -17px;
+  display: inline-block;
+  position: relative;
+  top: -40px;
+  left: 105px;
+}
+
+.pm {
+  margin-top: -50px !important;
+  font-style: italic;
 }
 
 #header-s {
@@ -2753,11 +2768,20 @@ input::placeholder {
   }
 }
 
+@media only screen and (min-width: 1403px) {
+  #header-s {
+    height: 31vh !important;
+  }
+  .personal-container {
+    height: 100vh !important;
+  }
+}
+
 .password-container {
   max-width: 1300px !important;
   width: 1200px;
   margin: 70px auto 0 auto;
-  height: 50vh;
+  height: 60vh;
 }
 
 .personal-h {
@@ -2785,7 +2809,7 @@ input::placeholder {
 .pass-sidebar {
   width: 300px;
   position: relative;
-  height: 375px !important;
+  height: 335px !important;
   left: -5%;
   bottom: 0;
   margin-left: 60px;

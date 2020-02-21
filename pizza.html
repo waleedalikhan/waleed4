@@ -855,7 +855,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
@@ -864,7 +864,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -880,11 +880,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn'>-</button>
+                                                        <button type='button'  value='0' class='qtvalue btn'>0</button>
+                                                        <button type='button' value='+' class='qtplus btn'>+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -908,6 +906,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -916,7 +915,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
@@ -925,7 +924,7 @@
                                         <div class="container-fluid align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-2 mx-auto">
-                                                    <label class="d-block" style="margin-top: -20px; font-size: 12px;">
+                                                    <label class="d-block" style="margin-top: -20px; font-size: 12px;" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                             <div class="custom-control custom-checkbox mb-2">
@@ -979,11 +978,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn'>-</button>
+                                                        <button type='button' value="0" class='qtvalue btn'>0</button>
+                                                        <button type='button' value='+' class='qtplus btn'>+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1007,6 +1004,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1015,7 +1013,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel"
@@ -1024,7 +1022,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1040,11 +1038,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1063,13 +1059,13 @@
 
         <section id="cat2" class="group-item" index="2">
             <div class="container">
-                <div class="row mx-md-4 mx-1 mt-3 dish-head">
+                <div class="row m-md-4 m-1 mt-3 dish-head">
                     <div class="col-12 ml-5 py-3 mx-auto dish-col">
                         <h5>Dish 1</h5>
                     </div>
                 </div>
-                <div class="row mx-md-2 mx-0 mt-4">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                <div class="row mx-md-2 mx-0 mt-4 mt-md-1">
+                    <div class="col-12 ml-5 py-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1078,6 +1074,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1086,7 +1083,10 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p style="margin-top: -55px;" ><span style="padding-right: 8px; font-weight: 900;">&bull;</span>2 Lorem, ipsum dolor.</p>
+                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>3 Lorem, ipsum dolor.</p>
+                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>1 Lorem, ipsum dolor.</p>
+                                    <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel"
@@ -1095,7 +1095,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1111,11 +1111,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1139,6 +1137,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1147,7 +1146,10 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p style="margin-top: -55px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>2 Lorem, ipsum dolor.</p>
+                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>3 Lorem, ipsum dolor.</p>
+                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>1 Lorem, ipsum dolor.</p>
+                                    <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel"
@@ -1156,7 +1158,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1172,11 +1174,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1200,6 +1200,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1208,7 +1209,10 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p style="margin-top: -55px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>2 Lorem, ipsum dolor.</p>
+                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>3 Lorem, ipsum dolor.</p>
+                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>1 Lorem, ipsum dolor.</p>
+                                    <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel"
@@ -1217,7 +1221,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1233,11 +1237,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1271,6 +1273,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1279,7 +1282,10 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p style="margin-top: -55px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>2 Lorem, ipsum dolor.</p>
+                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>3 Lorem, ipsum dolor.</p>
+                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>1 Lorem, ipsum dolor.</p>
+                                    <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseSeven" class="panel-collapse collapse in" role="tabpanel"
@@ -1288,7 +1294,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1304,11 +1310,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1332,6 +1336,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1340,7 +1345,10 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p style="margin-top: -55px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>2 Lorem, ipsum dolor.</p>
+                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>3 Lorem, ipsum dolor.</p>
+                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>1 Lorem, ipsum dolor.</p>
+                                    <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel"
@@ -1349,7 +1357,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1365,11 +1373,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1393,6 +1399,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1401,7 +1408,10 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p style="margin-top: -55px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>2 Lorem, ipsum dolor.</p>
+                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>3 Lorem, ipsum dolor.</p>
+                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>1 Lorem, ipsum dolor.</p>
+                                    <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseNine" class="panel-collapse collapse in" role="tabpanel"
@@ -1410,7 +1420,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1426,11 +1436,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1464,6 +1472,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1472,7 +1481,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTen" class="panel-collapse collapse in" role="tabpanel"
@@ -1481,7 +1490,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1497,11 +1506,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1525,6 +1532,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1533,7 +1541,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseEleven" class="panel-collapse collapse in" role="tabpanel"
@@ -1542,7 +1550,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1558,11 +1566,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1586,6 +1592,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1594,7 +1601,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTwelve" class="panel-collapse collapse in" role="tabpanel"
@@ -1603,7 +1610,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1619,11 +1626,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1657,6 +1662,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1665,7 +1671,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapse123" class="panel-collapse collapse in" role="tabpanel"
@@ -1674,7 +1680,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1690,11 +1696,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1718,6 +1722,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1726,7 +1731,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseThirteen" class="panel-collapse collapse in" role="tabpanel"
@@ -1735,7 +1740,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1751,11 +1756,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1779,6 +1782,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1787,7 +1791,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseFourteen" class="panel-collapse collapse in" role="tabpanel"
@@ -1796,7 +1800,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1812,11 +1816,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1850,6 +1852,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1858,7 +1861,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseFifteen" class="panel-collapse collapse in" role="tabpanel"
@@ -1867,7 +1870,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1883,11 +1886,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1911,6 +1912,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1919,7 +1921,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseSixteen" class="panel-collapse collapse in" role="tabpanel"
@@ -1928,7 +1930,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -1944,11 +1946,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -1972,6 +1972,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -1980,7 +1981,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseSeventeen" class="panel-collapse collapse in" role="tabpanel"
@@ -1989,7 +1990,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2005,11 +2006,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -2045,6 +2044,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -2053,7 +2053,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseEighteen" class="panel-collapse collapse in" role="tabpanel"
@@ -2062,7 +2062,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2078,11 +2078,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -2106,6 +2104,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -2114,7 +2113,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseNineteen" class="panel-collapse collapse in" role="tabpanel"
@@ -2123,7 +2122,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2139,11 +2138,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -2167,6 +2164,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -2175,7 +2173,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTwenty" class="panel-collapse collapse in" role="tabpanel"
@@ -2184,7 +2182,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2200,11 +2198,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -2238,6 +2234,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -2246,7 +2243,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTwentyOne" class="panel-collapse collapse in" role="tabpanel"
@@ -2255,7 +2252,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2271,11 +2268,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -2299,6 +2294,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -2307,7 +2303,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTwentyTwo" class="panel-collapse collapse in" role="tabpanel"
@@ -2316,7 +2312,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2332,11 +2328,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -2360,6 +2354,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -2368,7 +2363,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTwentyThree" class="panel-collapse collapse in" role="tabpanel"
@@ -2377,7 +2372,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2393,11 +2388,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -2431,6 +2424,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -2439,7 +2433,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTwentyFour" class="panel-collapse collapse in" role="tabpanel"
@@ -2448,7 +2442,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2464,11 +2458,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -2492,6 +2484,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -2500,7 +2493,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTwentyFive" class="panel-collapse collapse in" role="tabpanel"
@@ -2509,7 +2502,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2525,11 +2518,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -2553,6 +2544,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -2561,7 +2553,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTwentySix" class="panel-collapse collapse in" role="tabpanel"
@@ -2570,7 +2562,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2586,11 +2578,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -2624,6 +2614,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -2632,7 +2623,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTwentySeven" class="panel-collapse collapse in" role="tabpanel"
@@ -2641,7 +2632,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2657,11 +2648,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -2685,6 +2674,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -2693,7 +2683,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTwentyEight" class="panel-collapse collapse in" role="tabpanel"
@@ -2702,7 +2692,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2718,11 +2708,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -2746,6 +2734,7 @@
                                             <h5 class="panel-title">
                                                 Some dish
                                             </h5>
+                                            <a type="button" href="#productInfo" role="button" data-toggle="modal" id="product-info">Product info</a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion"
@@ -2754,7 +2743,7 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="pm">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseTwentyNine" class="panel-collapse collapse in" role="tabpanel"
@@ -2763,7 +2752,7 @@
                                         <div class="container align-items-center">
                                             <div class="row">
                                                 <div class="col-8 mt-4 mx-auto">
-                                                    <label class="d-block">
+                                                    <label class="d-block" style="font-size: 12px !important;">
                                                         lhre Sauce:
                                                     </label>
                                                     <select class="custom-select mt-2" id="inputGroupSelect01">
@@ -2779,11 +2768,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <input type='button' value='-' class='qtyminus'
-                                                            field='quantity' />
-                                                        <input type='text' name='quantity' value='0' class='qty' />
-                                                        <input type='button' value='+' class='qtyplus'
-                                                            field='quantity' />
+                                                        <button type='button' value='-' class='qtminus btn' >-</button>
+                                                        <button type='button' value="0" class='qtvalue btn' >0</button>
+                                                        <button type='button' value='+' class='qtplus btn' >+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">

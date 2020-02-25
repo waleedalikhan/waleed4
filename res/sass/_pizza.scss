@@ -145,14 +145,14 @@
 @media only screen and (max-width: 576px) and (min-width: 320px) {
   .pizza-header {
     margin: 0 !important;
-    height: 12vh;
+    height: 20vh;
     position: relative;
     margin-right: 400px;
   }
 }
 // ! Header ends
 
-// ? Food item
+//  ? Food item
 .item {
   margin-right: 420px;
   .hotel-container {
@@ -439,11 +439,13 @@
       font-size: 14px !important;
     }
     .reviews {
-      font-size: 8px !important;
+      font-size: 13px !important;
+      display: block !important;
+      margin-left: 0px !important;
     }
     p {
-      font-size: 11px !important;
-      line-height: 1rem !important;
+      font-size: 9px !important;
+      line-height: .5rem !important;
       font-weight: 700;
       color: #000;
     }
@@ -454,8 +456,8 @@
       justify-content: center;
       position: relative;
       .logo-container {
-        height: 110px;
-        width: 110px !important;
+        height: 105px;
+        width: 105px !important;
         top: -100px;
         position: absolute;
         z-index: 2;
@@ -476,6 +478,7 @@
           img {
             position: relative;
             left: 0 !important;
+            width: 100%;
           }
         }
       }

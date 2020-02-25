@@ -7,7 +7,7 @@ body {
 }
 
 .navbar {
-  background: #fd7f00 !important;
+  background: #fd8001 !important;
 }
 
 .navbar .nav-wrapper {
@@ -903,7 +903,7 @@ body {
   z-index: 9999;
   border: 0 !important;
   height: 50vh;
-  background: #fd7f00;
+  background: #fd8001;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
 }
@@ -1079,6 +1079,11 @@ body {
   padding-bottom: 2rem !important;
 }
 
+.work .carousel-item {
+  min-height: 250px !important;
+  width: 100% !important;
+}
+
 .work h2 {
   font-size: 20px;
 }
@@ -1092,10 +1097,10 @@ body {
 .work .carousel-control-prev,
 .work .carousel-control-next {
   height: 20%;
-  margin: auto;
+  margin: auto !important;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 414px) and (min-width: 320px) {
   #steps-carousel {
     padding: 100px 0 !important;
   }
@@ -1103,22 +1108,20 @@ body {
     border-radius: 0 !important;
     position: static !important;
   }
+  .work .work-indicators {
+    bottom: 50px !important;
+  }
 }
 
 .time {
   background: #f8f5f2;
-  height: 100vh;
-}
-
-.time .carousel-item {
-  min-height: 250px !important;
+  height: 100%;
 }
 
 .time .carousel-control-prev,
 .time .carousel-control-next {
   height: 10%;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.5);
+  margin: auto -30px;
 }
 
 .time h2 {
@@ -1132,7 +1135,7 @@ body {
 }
 
 .time .container-card {
-  width: 300px;
+  width: 100% !important;
   height: 300px;
   margin: 100px auto;
   background-color: #fff;
@@ -1145,6 +1148,7 @@ body {
 .time .container-card img {
   border-radius: 50%;
   overflow: hidden;
+  margin-bottom: -30px !important;
   width: 150px;
   position: relative;
   top: -60px;
@@ -1166,7 +1170,7 @@ body {
 }
 
 .time p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   margin-bottom: 10px;
   color: #666;
@@ -1213,17 +1217,14 @@ body {
 
 .time i {
   margin-left: -56px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .time .fa-check {
   color: #fd7f00;
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 320px) {
-  .time {
-    height: 80vh !important;
-  }
+@media only screen and (max-width: 1199px) and (min-width: 415px) {
   .container-card {
     width: 200px !important;
     margin: 60px auto !important;
@@ -1236,12 +1237,13 @@ body {
   .lightinner {
     list-style: none;
     width: 100%;
+    height: 100%;
   }
   .lightinner li {
     text-align: left;
     margin-left: 10px !important;
     color: #666;
-    font-size: 10px !important;
+    font-size: 14px;
     margin-bottom: 16px;
   }
   .img {
@@ -1260,7 +1262,54 @@ body {
     color: #333;
   }
   p {
-    font-size: 10px !important;
+    font-size: 50px !important;
+    line-height: 06px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320px) {
+  .container-card {
+    width: 30% !important;
+    height: 450px !important;
+    margin: 60px auto !important;
+    background-color: #fff;
+    padding: 0 10px 10px;
+    text-align: center;
+    -webkit-box-shadow: 0px 2px 12px -4px rgba(0, 0, 0, 0.65);
+            box-shadow: 0px 2px 12px -4px rgba(0, 0, 0, 0.65);
+  }
+  .lightinner {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+  }
+  .lightinner li {
+    text-align: left;
+    margin-left: 4px !important;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 16px;
+    line-height: 1.4rem !important;
+  }
+  .img {
+    border-radius: 140px;
+    overflow: hidden;
+    width: 100px !important;
+    position: relative;
+    top: -40px !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  h2 {
+    font-size: 18px !important;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  p {
+    font-size: 50px !important;
     line-height: 06px;
     margin-bottom: 20px;
     color: #666;
@@ -1522,7 +1571,7 @@ body {
 @media only screen and (max-width: 576px) and (min-width: 320px) {
   .pizza-header {
     margin: 0 !important;
-    height: 12vh;
+    height: 20vh;
     position: relative;
     margin-right: 400px;
   }
@@ -1789,11 +1838,13 @@ body {
     font-size: 14px !important;
   }
   .item .reviews {
-    font-size: 8px !important;
+    font-size: 13px !important;
+    display: block !important;
+    margin-left: 0px !important;
   }
   .item p {
-    font-size: 11px !important;
-    line-height: 1rem !important;
+    font-size: 9px !important;
+    line-height: .5rem !important;
     font-weight: 700;
     color: #000;
   }
@@ -1811,8 +1862,8 @@ body {
     position: relative;
   }
   .item .restaurant-logo .logo-container {
-    height: 110px;
-    width: 110px !important;
+    height: 105px;
+    width: 105px !important;
     top: -100px;
     position: absolute;
     z-index: 2;
@@ -1841,6 +1892,7 @@ body {
   .item .restaurant-logo .logo-container .logo-inner img {
     position: relative;
     left: 0 !important;
+    width: 100%;
   }
   .item #info {
     -webkit-box-shadow: none !important;
@@ -1988,7 +2040,7 @@ section {
 
 .js-menu-category-bar-sticky {
   background: #eee;
-  padding: 10px 5px;
+  padding: 20px 5px;
   overflow: hidden;
 }
 
@@ -2020,15 +2072,24 @@ section {
   color: #f36f37;
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 500px) {
-  .dishlink {
-    font-size: 12px !important;
-  }
+.dishlink {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  text-align: center !important;
 }
 
-@media only screen and (max-width: 499px) and (min-width: 320px) {
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+  .swiper-wrapper {
+    padding-left: 30px !important;
+  }
+  .swiper-wrapper .swiper-slide {
+    margin-right: 30px !important;
+  }
+  #search-btn {
+    background: #f8f5f2 !important;
+  }
   .dishlink {
-    font-size: 10px !important;
+    width: 40% !important;
   }
 }
 
@@ -2039,7 +2100,7 @@ section {
 
 .left {
   position: absolute;
-  top: 7px;
+  top: 0px;
   color: rgba(0, 0, 0, 0.7);
   font-size: 22px !important;
   z-index: 1039;
@@ -2049,7 +2110,7 @@ section {
 
 .right {
   position: absolute;
-  top: 7px;
+  top: 0px;
   right: 0;
   font-size: 22px !important;
   color: rgba(0, 0, 0, 0.7);
@@ -2368,6 +2429,12 @@ input::placeholder {
 .pm {
   margin-top: -50px !important;
   font-style: italic;
+}
+
+@media only screen and (max-width: 380px) and (min-width: 320px) {
+  #product-info {
+    display: block !important;
+  }
 }
 
 #header-s {

@@ -4,7 +4,7 @@ section {
 
 .js-menu-category-bar-sticky {
   background: #eee;
-  padding: 10px 5px;
+  padding: 20px 5px;
   overflow: hidden;
   .swiper-container {
     padding: 0 3% !important;
@@ -27,19 +27,35 @@ section {
   }
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 500px) {
-  .dishlink {
-    font-size: 12px !important;
-  }
+.dishlink {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  text-align: center !important;
 }
-@media only screen and (max-width: 499px) and (min-width: 320px) {
-  .dishlink {
-    font-size: 10px !important;
+
+@media only screen and (max-width: 1100px) and (min-width: 500px) {
+
+}
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+  .swiper-wrapper {
+    padding-left: 30px !important;
+    .swiper-slide {
+      margin-right: 30px !important;
+    }
   }
+  #search-btn {
+    background: #f8f5f2 !important;
+  }
+
+  .dishlink {
+    width: 40% !important;
+  }
+
 }
 
 @media only screen and (max-width: 606px) {
   .js-menu-category-bar-sticky {
+    
   }
 }
 
@@ -58,7 +74,7 @@ section {
 
 .left {
   position: absolute;
-  top: 7px;
+  top: 0px;
   color: rgba(0, 0, 0, 0.7);
   font-size: 22px !important;
   z-index: 1039;
@@ -67,7 +83,7 @@ section {
 }
 .right {
   position: absolute;
-  top: 7px;
+  top: 0px;
   right: 0;
   font-size: 22px !important;
   color: rgba(0, 0, 0, 0.7);
@@ -353,4 +369,10 @@ input::placeholder {
 .pm {
   margin-top: -50px !important;
   font-style: italic;
+}
+
+@media only screen and (max-width: 380px) and (min-width: 320px) {
+  #product-info {
+    display: block !important;
+  }
 }

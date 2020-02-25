@@ -8,7 +8,7 @@
     z-index: 9999;
     border: 0 !important;
     height: 50vh;
-    background: #fd7f00;
+    background: #fd8001;
     clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
     .input-group {
       width: 60%;
@@ -169,6 +169,10 @@
 // * How it works
 .work {
   padding-bottom: 2rem !important;
+  .carousel-item {
+    min-height: 250px !important;
+    width: 100% !important;
+  }
   h2 {
     font-size: 20px;;
   }
@@ -181,15 +185,22 @@
   .carousel-control-prev,
   .carousel-control-next {
     height: 20%;
-    margin: auto;
+    margin: auto !important;
   }
+
 }
-@media only screen and (max-width: $max-width-sm) {
+@media only screen and (max-width: 414px) and (min-width: 320px) {
   #steps-carousel {
     padding: 100px 0 !important;
     img {
       border-radius: 0 !important;
       position: static !important;
+    }
+  }
+
+  .work {
+    .work-indicators {
+      bottom: 50px !important;
     }
   }
 }
@@ -198,15 +209,11 @@
 // ? Your time
 .time {
   background: rgb(248, 245, 242);
-  height: 100vh;
-  .carousel-item {
-    min-height: 250px !important;
-  }
+  height: 100%;
   .carousel-control-prev,
   .carousel-control-next {
     height: 10%;
-    margin: auto;
-    background: rgba($color: #000000, $alpha: 0.5);
+    margin: auto -30px;
   }
   h2 {
     font-size: 20px;
@@ -217,7 +224,7 @@
     font-weight: 600;
   }
   .container-card {
-    width: 300px;
+    width: 100% !important;
     height: 300px;
     margin: 100px auto;
     background-color: #fff;
@@ -227,6 +234,7 @@
     img {
       border-radius: 50%;
       overflow: hidden;
+      margin-bottom: -30px !important;
       width: 150px;
       position: relative;
       top: -60px;
@@ -245,7 +253,7 @@
     display: block;
   }
   p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
     margin-bottom: 10px;
     color: #666;
@@ -293,16 +301,13 @@
 
   i {
     margin-left: -56px;
-    padding-left: 30px;
+    padding-left: 20px;
   }
   .fa-check {
     color: #fd7f00;
   }
 }
-@media only screen and (max-width: 1199px) and (min-width: 320px) {
-  .time {
-    height: 80vh !important;
-  }
+@media only screen and (max-width: 1199px) and (min-width: 415px) {
   .container-card {
     width: 200px !important;
     margin: 60px auto !important;
@@ -314,11 +319,12 @@
   .lightinner {
     list-style: none;
     width: 100%;
+    height: 100%;
     li {
       text-align: left;
       margin-left: 10px !important;
       color: #666;
-      font-size: 10px !important;
+      font-size: 14px;
       margin-bottom: 16px;
     }
   }
@@ -337,7 +343,52 @@
     color: #333;
   }
   p {
-    font-size: 10px !important;
+    font-size: 50px !important;
+    line-height: 06px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320px) {
+  .container-card {
+    width: 30% !important;
+    height: 450px !important;
+    margin: 60px auto !important;
+    background-color: #fff;
+    padding: 0 10px 10px;
+    text-align: center;
+    box-shadow: 0px 2px 12px -4px rgba(0, 0, 0, 0.65);
+  }
+  .lightinner {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    li {
+      text-align: left;
+      margin-left: 4px !important;
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 16px;
+      line-height: 1.4rem !important;
+    }
+  }
+  .img {
+    border-radius: 140px;
+    overflow: hidden;
+    width: 100px !important;
+    position: relative;
+    top: -40px !important;
+    transition: all 0.3s ease-in-out;
+  }
+  h2 {
+    font-size: 18px !important;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  p {
+    font-size: 50px !important;
     line-height: 06px;
     margin-bottom: 20px;
     color: #666;

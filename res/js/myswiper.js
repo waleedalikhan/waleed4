@@ -1,8 +1,7 @@
 var lastCat = "cat1";
 var mySwiper = new Swiper(".swiper-container", {
   // slidesPerView: 'auto',
-  slidesPerView: 6,
-  spaceBetween: 20,
+  slidesPerView: "auto",
   freeMode: !0,
   loop: !1,
   watchOverflow: !0,
@@ -12,7 +11,7 @@ var mySwiper = new Swiper(".swiper-container", {
   }
 });
 
-mySwiper.slidesPerView = 8;
+mySwiper.slidesPerView = "auto";
 mySwiper.update();
 
 mySwiper.on("reachBeginning", function() {

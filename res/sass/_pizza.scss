@@ -358,11 +358,11 @@
     .reviews {
       font-size: 8px !important;
     }
-    p {
+    .ria-para {
       font-size: 12px !important;
       line-height: 2rem !important;
       font-weight: 700;
-      color: #000;
+      color: rgb(102, 102, 102) !important;
     }
     .restaurant-logo {
       width: 100%;
@@ -440,14 +440,15 @@
     }
     .reviews {
       font-size: 13px !important;
-      display: block !important;
       margin-left: 0px !important;
     }
-    p {
-      font-size: 9px !important;
-      line-height: .5rem !important;
-      font-weight: 700;
-      color: #000;
+    .ria-para {
+      font-size: 10.9px !important;
+      font-weight: 400;
+      line-height: 1.1rem !important;
+      padding-right: 0 !important;
+      padding-bottom: 0 !important;
+      color: rgb(102, 102, 102) !important;
     }
     .restaurant-logo {
       width: 100%;
@@ -504,6 +505,14 @@
         outline: none !important;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .reviews {
+    font-size: 13px !important;
+    margin-left: 0px !important;
+    display: block !important;
   }
 }
 // ? Food item ends

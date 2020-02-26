@@ -52,9 +52,10 @@ $("#heart").click(function() {
   $(".heart").toggleClass("fas heart-color");
 });
 
-// ? Adjusting the width of popups on all devices dynamically
+// ? Adjusting the width and height of popups on all devices dynamically
 $(document).ready(function() {
   var modalWidth = $(window).width();
+  var modalHeight = $(window).height();
   if (modalWidth < 900) {
     $(".my-modal").attr(
       "style",
@@ -95,7 +96,7 @@ $(".tab-link").click(function() {
 // *  Adding and subtracting the order quantity
 jQuery(document).ready(function() {
   // ? This button will increment the value
-  $(".qtyplus").click(function(e) {
+  $(".qtplus").click(function(e) {
     // ! Stop acting like a button
     e.preventDefault();
     // ? Get the field name
@@ -112,7 +113,7 @@ jQuery(document).ready(function() {
     }
   });
   // * This button will decrement the value till 0
-  $(".qtyminus").click(function(e) {
+  $(".qtminus").click(function(e) {
     // ? Stop acting like a button
     e.preventDefault();
     // * Get the field name

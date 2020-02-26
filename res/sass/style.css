@@ -1740,11 +1740,11 @@ body {
   .item .reviews {
     font-size: 8px !important;
   }
-  .item p {
+  .item .ria-para {
     font-size: 12px !important;
     line-height: 2rem !important;
     font-weight: 700;
-    color: #000;
+    color: #666666 !important;
   }
   .item .restaurant-logo {
     width: 100%;
@@ -1839,14 +1839,15 @@ body {
   }
   .item .reviews {
     font-size: 13px !important;
-    display: block !important;
     margin-left: 0px !important;
   }
-  .item p {
-    font-size: 9px !important;
-    line-height: .5rem !important;
-    font-weight: 700;
-    color: #000;
+  .item .ria-para {
+    font-size: 10.9px !important;
+    font-weight: 400;
+    line-height: 1.1rem !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    color: #666666 !important;
   }
   .item .restaurant-logo {
     width: 100%;
@@ -1918,6 +1919,14 @@ body {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
     outline: none !important;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .reviews {
+    font-size: 13px !important;
+    margin-left: 0px !important;
+    display: block !important;
   }
 }
 
@@ -2421,7 +2430,6 @@ input::placeholder {
 #product-info {
   font-size: 11px !important;
   color: #17f !important;
-  display: inline-block;
   position: relative;
   top: -40px;
   left: 105px;
@@ -2434,8 +2442,25 @@ input::placeholder {
 
 @media only screen and (max-width: 380px) and (min-width: 320px) {
   #product-info {
-    display: block !important;
+    top: -20px;
+    left: 0;
+    margin-top: 14px;
+    margin-bottom: 14px;
   }
+}
+
+.bullet {
+  margin-top: -50px !important;
+}
+
+.bullet .bullet-product {
+  margin-bottom: -30px;
+}
+
+.bullet .bullet-product span {
+  color: #666666;
+  font-weight: 700;
+  padding-right: 5px;
 }
 
 #header-s {

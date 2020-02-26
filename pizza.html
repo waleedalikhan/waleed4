@@ -802,7 +802,7 @@
         <div class="swiper-container container" style="max-width: 1050px;">
             <button type="button" onclick="showSearchBar()" class="left fas fa-search fa-1x border-0 bg-transparent" id="search-btn"></button>
             <div class="swiper-wrapper container" id="dish-list">
-                <a href="#cat1" data-category="1" class="swiper-slide nav-link js-scroll-trigger dishlink">Popular&nbsp;Dishes</a>
+                <a href="#cat1" data-category="1" class="swiper-slide nav-link js-scroll-trigger dishlink active">Popular&nbsp;Dishes</a>
                 <a href="#cat2" data-category="2" class="swiper-slide nav-link js-scroll-trigger dishlink">Super&nbsp;Sparmenüs</a>
                 <a href="#cat3" data-category="3" class="swiper-slide nav-link js-scroll-trigger dishlink">Salate</a>
                 <a href="#cat4" data-category="4" class="swiper-slide nav-link js-scroll-trigger dishlink">Pizza</a>
@@ -836,7 +836,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -879,9 +879,9 @@
                                             <div class="row">
                                                 <div class="col-4 text-right">
                                                     <form id='myform' method='POST' action='#' class="d-inline-block">
-                                                        <button type='button' value='-' class='qtminus btn'>-</button>
-                                                        <button type='button'  value='0' class='qtvalue btn'>0</button>
-                                                        <button type='button' value='+' class='qtplus btn'>+</button>
+                                                        <button type='button' name="minus" field="minus" value='-' class='qtminus btn'>-</button>
+                                                        <button type='button' name="value" field="value" value='0' class='qtvalue btn'>0</button>
+                                                        <button type='button' name="plus" field="plus" value='+' class='qtplus btn'>+</button>
                                                     </form>
                                                 </div>
                                                 <div class="col-8 d-inline-block">
@@ -896,7 +896,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -994,7 +994,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel mb-3 panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1059,12 +1059,12 @@
         <section id="cat2" class="group-item" index="2">
             <div class="container">
                 <div class="row mx-md-3 mx-0 mb-md-3 mb-5 dish-head">
-                    <div class="col-12 ml-5 py-3 mx-auto dish-col">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto dish-col">
                         <h5>Super Sparmenus</h5>
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-2 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1082,10 +1082,12 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p style="margin-top: -55px;" ><span style="padding-right: 8px; font-weight: 900;">&bull;</span>2 Lorem, ipsum dolor.</p>
-                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>3 Lorem, ipsum dolor.</p>
-                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>1 Lorem, ipsum dolor.</p>
+                                    <div class="bullet">
+                                        <p class="bullet-product"><span>&bull;</span>2 Lorem, ipsum dolor.</p>
+                                    <p class="bullet-product"><span>&bull;</span>3 Lorem, ipsum dolor.</p>
+                                    <p class="bullet-product mb-1"><span>&bull;</span>1 Lorem, ipsum dolor.</p>
                                     <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem.</p>
+                                    </div>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel"
@@ -1127,7 +1129,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1145,10 +1147,12 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p style="margin-top: -55px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>2 Lorem, ipsum dolor.</p>
-                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>3 Lorem, ipsum dolor.</p>
-                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>1 Lorem, ipsum dolor.</p>
+                                    <div class="bullet">
+                                        <p class="bullet-product"><span>&bull;</span>2 Lorem, ipsum dolor.</p>
+                                    <p class="bullet-product"><span>&bull;</span>3 Lorem, ipsum dolor.</p>
+                                    <p class="bullet-product mb-1"><span>&bull;</span>1 Lorem, ipsum dolor.</p>
                                     <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem.</p>
+                                    </div>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel"
@@ -1190,7 +1194,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel mb-3 panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1208,10 +1212,12 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p style="margin-top: -55px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>2 Lorem, ipsum dolor.</p>
-                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>3 Lorem, ipsum dolor.</p>
-                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>1 Lorem, ipsum dolor.</p>
+                                    <div class="bullet">
+                                        <p class="bullet-product"><span>&bull;</span>2 Lorem, ipsum dolor.</p>
+                                    <p class="bullet-product"><span>&bull;</span>3 Lorem, ipsum dolor.</p>
+                                    <p class="bullet-product mb-1"><span>&bull;</span>1 Lorem, ipsum dolor.</p>
                                     <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem.</p>
+                                    </div>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel"
@@ -1258,12 +1264,12 @@
         <section id="cat3" class="group-item" index="3">
             <div class="container">
                 <div class="row mx-md-3 mx-0 dish-head">
-                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto" style="background-color: #f8f5f2;">
                         <h5>Salate</h5>
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1281,10 +1287,12 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p style="margin-top: -55px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>2 Lorem, ipsum dolor.</p>
-                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>3 Lorem, ipsum dolor.</p>
-                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>1 Lorem, ipsum dolor.</p>
+                                    <div class="bullet">
+                                        <p class="bullet-product"><span>&bull;</span>2 Lorem, ipsum dolor.</p>
+                                    <p class="bullet-product"><span>&bull;</span>3 Lorem, ipsum dolor.</p>
+                                    <p class="bullet-product mb-1"><span>&bull;</span>1 Lorem, ipsum dolor.</p>
                                     <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem.</p>
+                                    </div>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseSeven" class="panel-collapse collapse in" role="tabpanel"
@@ -1326,7 +1334,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1344,10 +1352,12 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p style="margin-top: -55px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>2 Lorem, ipsum dolor.</p>
-                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>3 Lorem, ipsum dolor.</p>
-                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>1 Lorem, ipsum dolor.</p>
+                                    <div class="bullet">
+                                        <p class="bullet-product"><span>&bull;</span>2 Lorem, ipsum dolor.</p>
+                                    <p class="bullet-product"><span>&bull;</span>3 Lorem, ipsum dolor.</p>
+                                    <p class="bullet-product mb-1"><span>&bull;</span>1 Lorem, ipsum dolor.</p>
                                     <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem.</p>
+                                    </div>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel"
@@ -1389,7 +1399,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel mb-3 panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1407,10 +1417,12 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <p style="margin-top: -55px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>2 Lorem, ipsum dolor.</p>
-                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>3 Lorem, ipsum dolor.</p>
-                                    <p style="margin-top: -40px;"><span style="padding-right: 8px; font-weight: 900;">&bull;</span>1 Lorem, ipsum dolor.</p>
+                                    <div class="bullet">
+                                        <p class="bullet-product"><span>&bull;</span>2 Lorem, ipsum dolor.</p>
+                                    <p class="bullet-product"><span>&bull;</span>3 Lorem, ipsum dolor.</p>
+                                    <p class="bullet-product mb-1"><span>&bull;</span>1 Lorem, ipsum dolor.</p>
                                     <p style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem.</p>
+                                    </div>
                                     <h4>8.50 €</h4>
                                 </div>
                                 <div id="collapseNine" class="panel-collapse collapse in" role="tabpanel"
@@ -1457,12 +1469,12 @@
         <section id="cat4" class="group-item" index="4">
             <div class="container">
                 <div class="row mx-md-3 mx-0 mt-3 dish-head">
-                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto" style="background-color: #f8f5f2;">
                         <h5>Pizza</h5>
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1522,7 +1534,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1582,7 +1594,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel mb-3 panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1647,12 +1659,12 @@
         <section id="cat5" class="group-item" index="5">
             <div class="container">
                 <div class="row mx-md-3 mx-0 dish-head">
-                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto" style="background-color: #f8f5f2;">
                         <h5>Wunschpizza</h5>
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1712,7 +1724,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1772,7 +1784,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel mb-3 panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1837,12 +1849,12 @@
         <section id="cat6" class="group-item" index="6">
             <div class="container">
                 <div class="row mx-md-3 mx-0 dish-head">
-                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto" style="background-color: #f8f5f2;">
                         <h5>Fleischgerichte</h5>
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1902,7 +1914,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -1962,7 +1974,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel mb-3 panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -2027,14 +2039,14 @@
         <section id="cat7" class="group-item" index="7">
             <div class="container">
                 <div class="row mx-md-3 mx-0 mt-3 dish-head">
-                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto" style="background-color: #f8f5f2;">
                         <h5>
                             Burger
                         </h5>
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -2094,7 +2106,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -2154,7 +2166,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel mb-3 panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -2219,12 +2231,12 @@
         <section id="cat8" class="group-item" index="8">
             <div class="container">
                 <div class="row mx-md-3 mx-0 dish-head">
-                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto" style="background-color: #f8f5f2;">
                         <h5>Indisch - Vorspeisen</h5>
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -2284,7 +2296,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -2344,7 +2356,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel mb-3 panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -2409,12 +2421,12 @@
         <section id="cat9" class="group-item" index="9">
             <div class="container">
                 <div class="row mx-md-3 mx-0 dish-head">
-                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto" style="background-color: #f8f5f2;">
                         <h5>Indisch - Hauptgerichte</h5>
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -2474,7 +2486,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -2534,7 +2546,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel mb-3 panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -2599,12 +2611,12 @@
         <section id="cat10" class="group-item" index="10">
             <div class="container">
                 <div class="row mx-md-3 mx-0 dish-head">
-                    <div class="col-12 ml-5 py-3 mx-auto" style="background-color: #f8f5f2;">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto" style="background-color: #f8f5f2;">
                         <h5>Biryani</h5>
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -2664,7 +2676,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">
@@ -2724,7 +2736,7 @@
                     </div>
                 </div>
                 <div class="row mx-md-0">
-                    <div class="col-12 ml-5 py-3 mx-auto">
+                    <div class="col-12 ml-5 pb-1 pt-2 mx-auto">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel mb-3 panel-default">
                                 <div class="panel-heading border" role="tab" id="headingOne">

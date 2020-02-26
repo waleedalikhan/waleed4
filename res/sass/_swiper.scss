@@ -361,7 +361,6 @@ input::placeholder {
 #product-info {
   font-size: 11px !important;
   color: #17f !important;
-  display: inline-block;
   position: relative;
   top: -40px;
   left: 105px;
@@ -374,6 +373,21 @@ input::placeholder {
 
 @media only screen and (max-width: 380px) and (min-width: 320px) {
   #product-info {
-    display: block !important;
+    top: -20px;
+    left: 0;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+}
+
+.bullet {
+  margin-top: -50px !important;
+  .bullet-product {
+    margin-bottom: -30px;
+    span {
+      color: rgb(102, 102, 102);
+      font-weight: 700;
+      padding-right: 5px;
+    }
   }
 }
